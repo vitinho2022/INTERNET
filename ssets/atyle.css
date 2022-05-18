@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --fundo: #000000; 
+    --entrecont: #1572A1;
+    --red: #FF0000; 
+    --letra: #FFFFFF;
+    --titulos:#08ECFB;
+    --linhasf1: #06FF00;
+    --linhasf2: #FCD900;
+    --quadros: #222831;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--fundo);
+}
+body, button, input, select, textarea{
+    font-family: 'Poppins', 'sans-serif';
+    color: white; 
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 24px;
+}
+/* define a margen e a gordura da fonte */
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    color: var(var(--letra));
+}
+
+button {
+    background: var(--entrecont);
+    border: 15px;
+    border-radius: 16px;
+    padding: 8px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header {
+    /* background-color: red; */
+    height:  calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(grey);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background-color: var(--fundo);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul a {
+    font-size: 24px;
+    color: var(--titulos);
+    text-decoration: none;
+    margin: 0 35px;
+}
